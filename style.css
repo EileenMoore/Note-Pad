@@ -1,0 +1,126 @@
+body {
+    font-family: Calibri;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 1em;
+    background-color:#fcfcfc;
+}
+
+input {
+    border: none;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 1em;
+    width: 100%;
+}
+
+input:focus {
+    outline: 0;
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #888888;
+    width: 640px;
+    padding: 8px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.first-line {
+    color: darkgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.close {
+    margin-right: 8px;
+    cursor: pointer;
+    color: darkgray;
+}
+
+.last-line {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.note {
+    background-color: white;
+    width: 350px;
+    min-height: 100px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px #888888;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 16px;
+}
+
+.saved-note {
+    background-color:#ffff3d;
+}
+
+.note-order {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin-bottom: 16px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar {
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchInput {
+    width: 100px;
+    height: 16px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    padding: 6px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.loupe {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    padding: 8px;
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 0px 8px 8px 0px;
+}

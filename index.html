@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/note-2-16-white.ico">
+    <title>Note Pad</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+</head>
+
+<body onload="addSavedNotes()">
+
+    <div class="searchbar">
+        <input class="searchInput" id="searchTitle" placeholder="Search" onchange="filterNotes()">
+        <img class="loupe" src="img/search-13-16.ico">
+    </div>
+
+    <div class="center">
+        <div class="card">
+            <div id="first-line" class="first-line hidden">
+                <div><input id="title" placeholder="Title"></div>
+                <img class="icon" src="img/note-2-16.ico">
+            </div>
+            <input id="note" onclick="showFullCard()" placeholder="Take a note...">
+
+            <div id="last-line" class="last-line hidden">
+                <p class="close" onclick="closeLine(); loadNote()">Post</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="note-order" id="mynotes"></div>
+
+    <div class="note-order" id="savednotes"></div>
+
+</body>
+
+</html>
